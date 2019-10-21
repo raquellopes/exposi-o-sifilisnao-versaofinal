@@ -1,0 +1,122 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+p{
+    line-height: 24px;
+}
+
+header.masthead {
+    position: relative;
+    background-color: #343a40;
+    background: url(../images/destaque.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 16rem;
+    padding-bottom: 10rem
+}
+
+header.masthead h1 {
+    color: #fff
+}
+
+.filtros {
+    margin-top: 40px
+}
+
+.navbar {
+    font-size: 18px
+}
+
+.overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: .3
+}
+
+.gallery-title {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px
+}
+
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e
+}
+
+.filter-button {
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    color: #56270c;
+    margin-bottom: 30px;
+    border-color: transparent
+}
+
+.filter-button:hover {
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-align: center
+}
+
+.btn-default:active .filter-button:active,
+.filter-button:hover {
+    color: #fff;
+    background-color:  #e7b786;
+}
+
+.port-image {
+    width: 100%
+}
+
+.gallery_product {
+    margin-bottom: 30px
+}
+
+
+#sobre{
+    margin: 90px 6px 10px;
+}
+/* 
+h1{
+    margin: 90px 6px 10px;
+}
+
+h2{
+        margin: 90px 6px 10px;
+} */
+
+.col-md-7{
+    margin-top: 70px;
+}
+.autores{
+    width: 65%;
+    margin: 90px;
+}
+
+.text-center{
+color: #56270c;
+}
+
+.row.centralizar {
+   margin-top: 200px;
+}
+
+.KBmap_cords {
+    display: none;
+}

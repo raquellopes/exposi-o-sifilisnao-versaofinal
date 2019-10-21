@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exposição</title>
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" type="text/css">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link href="styles/KBmapmarkers.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/KBmapmarkers.js"></script>
+        <script type="text/javascript" src="js/KBmapmarkersCords.js"></script>
+</head>
+
+<body>
+
+
+		<nav class="navbar navbar-default navbar-fixed-top" id="home">
+                <div class="container">
+                        <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                </button>
+                                  <a class="navbar-left" href="index.html">
+                                    <img class="img-responsive" width="86" height="39" src="./images/logo-menu.png">
+                                </a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                <li><a data-scroll href="index.html">Acervo</a></li>
+                                <li><a href="sobre.html">Sobre</a><li> 
+                                </ul>   
+                        </div>
+                        <!--/.nav-collapse -->
+                </div>
+        </nav>
+
+        <header class="masthead text-white text-center">
+                <div class="overlay"></div>
+                <div class="container">
+                        <div class="row">
+                                <div class="col-xl-9">
+                                        <h1> A sífilis, Ramon Casas e o cartaz do sanatório para sifilíticos</h1>
+                                </div>
+                        </div>
+                </div>
+        </header>
+
+        <!-- CONTAINER- AUTOR -->
+        <div class="container">
+                        <div class="row">
+                                <div class="col-md-5">
+                                <img class= "autores" src="images/autor3.jpg" class="img-fluid" alt="Responsive image">
+                                </div>
+                
+                        <div class="col-md-7">
+                                <h1 class="text-center">O autor</h1>
+                        <p>Ramon Casas i Carbó foi um pintor e caricaturista espanhol, nascido em 1886, e um dos expoentes do modernismo Catalão devido as suas contribuições na pintura e nas artes gráficas. 
+                        Em 1900, Casas criou um cartaz abordando o tema da sífilis para “promover o Sanatório de Dr. Abreu, localizado em Bonanova, e que oferecia tratamento especializado para sífilis (HERNÁNDEZ, 2016).              
+                        </p>
+                        </div>
+                        </div>
+        </div>
+
+        <!-- CONTAINER- OBRAS E DESCRIÇÃO -->
+        
+        <div class="container">
+                <div class="row">
+                        <div class="col-md-8">
+                        <div class="h-100">
+                        <div class="row centralizar">
+                                <h2 class="text-center">A Obra</h2>
+                                <p> Em 1900, Casas criou um cartaz abordando o tema da sífilis para “promover o Sanatório de Dr. Abreu, localizado em Bonanova, e que oferecia tratamento especializado para sífilis (HERNÁNDEZ, 2016).</p>
+                        </div>
+                        </div>          
+                        </div>
+
+                        <div class="col-md-4"> <!-- Imagem -->
+                                        <section class="KBmap" id="KBtestmap">
+                                                </section>
+                        </div>
+               
+                </div>
+        </div>
+	</body>
+
+	<script>
+
+		var json = {
+			"mapMarker1": {
+				"cordX": "12.02",
+				"cordY": "11.93",
+				"icon": "plus.svg",
+				"modal": {
+					"title": "Sífilis",
+					"content": "<p> O cartaz se divide em três áreas distintas. Na parte superior, o nome sífilis aparece em destaque e o autor correlaciona o S inicial e o final da palavra ao formato de uma serpente. Com isso, busca explicitar o quanto virulenta, agressiva e perigosa a enfermidade pode ser.</p>"
+				}
+			},
+
+                        "mapMarker2": {
+				"cordX": "55.0",
+				"cordY": "37.40",
+				"icon": "plus.svg",
+				"modal": {
+					"title": "Mulher",
+					"content": "<p> Ao centro, vê-se uma mulher pálida, emagrecida, coberta apenas por uma manta, deixa à vista um braço com aparência de baixo tônus muscular, ela se apresenta de forma insinuante, leva em sua mão, à frente do corpo, uma flor, e segura na mão oculta atrás do corpo, uma serpente, como que representando a sedução e o prazer, porém ao mesmo tempo, a iminência do perigo, da enfermidade e da morte.</p>"
+				}
+			},
+
+                        "mapMarker3": {
+				"cordX": "28.0",
+				"cordY": "77.40",
+				"icon": "plus.svg",
+				"modal": {
+					"title": "Curación absoluta y radical",
+					"content": "<p>Na área inferior, Casas dá ênfase às palavras “Curación absoluta y radical”, o que era bastante representativo, tendo em vista os números altos de morbidade e mortalidade da doença, e a indisponibilidade de tratamento verdadeiramente eficaz, sendo o mercúrio o único meio disponível no arsenal médico. Dessa forma, as palavras utilizadas tinham um extremo valor apelativo, pois representavam a esperança diante de um quadro tão difícil e de prognóstico incerto.</p>"
+				}
+			},
+
+
+                        "mapMarker4": {
+				"cordX": "8.80",
+				"cordY": "90.12",
+				"icon": "plus.svg",
+				"modal": {
+					"title": "Área Inferior",
+					"content": "<p>Ainda nessa área inferior, podemos observar a mesma estrutura utilizada na parte de cima do cartaz, na qual Casas faz uso dos vários esses em formato de serpente, como que a concordar com a afirmação de Diaz de Ysla, que em 1539, empregou o nome mal serpentino e justifica: “...eu não posso pensar em outra coisa com a qual ela poderia ser naturalmente comparada do que com a serpente porque do mesmo modo que a serpente é um animal feio, repugnante e assustador, a doença é feia, repugnante e assustadora” (GERALDES NETO et al., 2009).</p>"
+				}
+			},
+
+
+
+
+
+		};
+
+		(function($) {
+			$(document).ready(function(){
+
+				createKBmap('KBtestmap', 'images/obra3.png');
+
+				KBtestmap.importJSON(json);
+
+				KBtestmap.showAllMapMarkers();
+
+			});
+
+		})(jQuery);
+
+	</script>
+
+
+
+        <div class="container">
+                <hr><img src="images/parceiros.png" alt="" class="img-responsive center-block" id="parceiros">
+        </div>
+
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        </script>
+
+</html>

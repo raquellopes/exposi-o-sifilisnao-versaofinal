@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exposição</title>
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" type="text/css">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link href="styles/KBmapmarkers.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/KBmapmarkers.js"></script>
+        <script type="text/javascript" src="js/KBmapmarkersCords.js"></script>
+</head>
+<body>
+
+
+		<nav class="navbar navbar-default navbar-fixed-top" id="home">
+                <div class="container">
+                        <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                </button>
+                                  <a class="navbar-left" href="index.html">
+                                    <img class="img-responsive" width="86" height="39" src="./images/logo-menu.png">
+                                </a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                                        <ul class="nav navbar-nav navbar-right">
+                                        <li><a data-scroll href="index.html">Acervo</a></li>
+                                        <li><a href="sobre.html">Sobre</a><li> 
+                                        </ul>   
+                        </div>
+                        <!--/.nav-collapse -->
+                </div>
+        </nav>
+
+        <header class="masthead text-white text-center">
+                <div class="overlay"></div>
+                <div class="container">
+                        <div class="row">
+                                <div class="col-xl-9">
+                                        <h1>A sífilis, Edvard Munch e a “Herança” </h1>
+                                </div>
+                        </div>
+                </div>
+        </header>
+
+        <!-- CONTAINER- AUTOR -->
+        <div class="container">
+                <div class="row">
+                                <div class="col-md-5">
+                                <img class= "autores" src="images/autor4.jpg" class="img-fluid" alt="Responsive image">
+                                </div>
+                
+                        <div class="col-md-7">
+                        <h1 class="text-center">O autor</h1>
+                        <p>Nasceu na Noruega, em Oslo, no final do século XIX, e é considerado o precursor do expressionismo alemão, um movimento de contraponto às normas burguesas, que propunha um novo padrão estético, no qual a realidade se apresentava de uma forma trágica e crítica em relação à ordem social dominante por meio da representação de imagens distorcidas, deformadas carregadas de sentimentos de angústia, tristeza e medo. Uma de suas obras “O grito” é considerada  como  a  maior  representação do expressionismo. 
+                        Munch perdeu a mãe e uma irmã, ainda jovem, em seguida, sua outra irmã foi diagnosticada com problemas mentais, seu avô foi diagnosticado com sífilis, e o próprio Munch foi uma criança enfermiça e chegou a procurar tratamento psiquiátrico quando adulto, por apresentar um quadro de perturbação e conflitos, além de diagnóstico de ansiedade, depressão e transtorno bipolar (AZEEM, 2015).
+                        </p>
+                        </div>
+                        </div>
+        </div>
+
+        <div class="container">
+                        <div class="row">
+                                <div class="col-md-6">
+                                <div class="h-100">
+                                <div class="row h-100 justify-content-center align-items-center">
+                                        <h2 class="text-center">A Obra</h2>
+                                <p> Vamos conhecer um quadro “que foi exposto no “Salão dos independentes”, em Paris no ano de 1903, intitulado inicialmente como “Mãe” e, depois, renomeado como “Herança”. Nessa obra Munch retrata uma mãe sifilítica e seu filho enfermo com sífilis congênita. 
+                                A cena, desesperadora e triste, nos remete a um aspecto importante, que é a forma distinta como Munch retrata mãe e filho, e a exposição dos sinais clínicos, resultado de um provável estudo de Munch acerca da sífilis congênita, durante visita ao Hôpital Saint-Louis na cidade de Paris, onde conheceu uma coleção em cera usada para o estudo de anatomia, incluindo uma peça de um recém-nascido com sífilis congênita, e na mesma ocasião,  viu uma cena real, na qual uma mãe chorava ao lado de seu filho com sífilis (PERCIACCANTE; CORALLI, 2018).  O quadro sofreu várias críticas, principalmente pelo fato de retratar uma infecção sexualmente transmissível, tabu na época. O quadro foi pintado, em torno de 1887 a 1889, e foi exposto em 1903. </p>
+                                </div>
+                                </div>          
+                                </div>
+                
+                                <div class="col-md-6"> <!-- Imagem -->
+                                                <section class="KBmap" id="KBtestmap">
+                                                </section>
+                                </div>
+                       
+                        </div>
+        </div>
+
+	</body>
+
+	<script>
+
+		var json = {
+			"mapMarker1": {
+				"cordX": "81.40",
+				"cordY": "69.93",
+				"icon": "plus.svg",
+				"modal": {
+					"title": "Obra",
+					"content": "<p> A mãe e o ambiente são pintados em cores escuras, sóbrias que sugestionam uma atmosfera de dor e sofrimento. A cena se passa em uma sala de espera, onde a mãe sifilítica, angustiada, mortificada, chora sobre o fruto de um provável pecado de prostituição ou infidelidade, enquanto aguarda pelo veredito em relação ao seu filho. A mãe, bem vestida para os padrões da época, tem o filho em seu colo, mas não chega a  tocá-lo, uma de suas mãos, segura um lenço delicado e fino próximo ao rosto como se estivesse a chorar, seu outro braço pende ao lado do corpo, indicando cansaço e desesperança. Ela é a própria imagem da tristeza, desespero e culpa.</p>"
+				}
+			},
+
+                        "mapMarker2": {
+				"cordX": "42.0",
+				"cordY": "62.40",
+				"icon": "plus.svg",
+				"modal": {
+					"title": "Recém-Nascido",
+					"content": "<p> O recém-nascido, desamparado e frágil, é o centro, o cerne de todo o quadro.  Foi pintado em cores claras e brilhantes, como se estivesse sob um holofote, de forma a expor toda miséria humana concentrada em uma só criatura, produto de uma sociedade hipócrita. Munch denuncia, por meio da obra, o infortúnio dos recém-nascidos expostos à sífilis congênita. A criança é o provável fruto de uma relação sexual que culminou em uma enfermidade, e é apresentada como se acabasse de vir ao mundo, totalmente desnuda, como a querer chocar a sociedade e lhe impingir esta culpa. Munch caracteriza a criança com sinais de sífilis congênita, retratando-o magro, pálido, com lesões exantemáticas, secreção nasal, e nariz em sela. Toda a carga emocional desta obra tem sido revivida dia após dia, durante esses séculos, desde que se teve conhecimento acerca da doença. </p>"
+				}
+			},
+		};
+
+		(function($) {
+			$(document).ready(function(){
+
+				createKBmap('KBtestmap', 'images/obra4.jpg');
+
+				KBtestmap.importJSON(json);
+
+				KBtestmap.showAllMapMarkers();
+
+			});
+
+		})(jQuery);
+
+        </script>
+        
+
+        <div class="container">
+                <hr><img src="images/parceiros.png" alt="" class="img-responsive center-block" id="parceiros">
+        </div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exposição</title>
+		<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" type="text/css">
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<link href="styles/KBmapmarkers.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles/main.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/KBmapmarkers.js"></script>
+		<script type="text/javascript" src="js/KBmapmarkersCords.js"></script>
+	</head>
+
+<body>
+
+
+		<nav class="navbar navbar-default navbar-fixed-top" id="home">
+                <div class="container">
+                        <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-left" href="index.html">
+                                    <img class="img-responsive" width="86" height="39" src="./images/logo-menu.png">
+                                </a>
+                        </div>
+						
+						<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-right">
+									<li><a data-scroll href="index.html">Acervo</a></li>
+									<li><a href="sobre.html">Sobre</a><li> 
+									</ul>   
+						</div>
+
+                        <!--/.nav-collapse -->
+                </div>
+        </nav>
+
+        <header class="masthead text-white text-center">
+                <div class="overlay"></div>
+                <div class="container">
+                        <div class="row">
+                                <div class="col-xl-9">
+                                        <h1>A sífilis, Benvenuto Cellini e “Perseus  com a Cabeça de Medusa” </h1>
+                                </div>
+                        </div>
+                </div>
+        </header>
+
+        <!-- CONTAINER- AUTOR -->
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                    <img class= "autores" src="images/autor.png" class="img-fluid" alt="Responsive image">
+					</div>
+					
+                        <div class="col-md-7">
+                        		<h2 class="text-center">O autor</h2>
+                       			<p>Bevenuto Cellini nasceu em 1500 e foi um dos maiores escultores renascentistas, também reconhecido por seu talento como ourives, escritor e músico. Era um gênio nas artes, mas tinha um comportamento controverso, se envolvendo em vários escândalos sexuais e homicídios, tendo relatado os fatos em sua autobiografia, escrita por ele mesmo (CELLINI, 1902). Aos 29 anos de idade, ele contraiu sífilis e, ao entrar na segunda fase da doença, foi orientado a fazer uso de mercúrio, uma das opções de tratamento na época. Por temer os efeitos colaterais, ele recusou a medicação, dando preferência a aplicação de sanguessugas e loções. Ao evoluir para a fase terciária da sífilis, surgiu um rumor de que Celline estaria em estado terminal. Nesse período, envolveu-se em uma compra desvantajosa, e as pessoas com as quais ele negociou, tentaram envenená-lo, adicionando mercúrio a sua alimentação, porém, a dose administrada não foi suficiente para matá-lo, mas sim para curá-lo da sífilis (WOLF, 2005).</p>
+                        </div>
+                        </div>
+
+
+	<div class="container">
+			<div class="row">
+					<div class="col-md-6">
+					<div class="h-100">
+					<div class="row h-100 justify-content-center align-items-center">
+							<h2 class="text-center">A Obra</h2>
+					<p> Em resposta a tentativa de assassinato contra a sua vida e a experiência vivenciada durante o período de adoecimento pela  sífilis, Cellini esculpiu em bronze uma obra-prima, intitulada “Perseus com a Cabeça de Medusa”. Essa escultura além de representar a vitória de Celline sobre os seus inimigos ou sobre a enfermidade que o atormentou, também expressa a sua genialidade, por meio da capacidade representativa, da beleza estética exibida em cada detalhe e do poder de transmissão de seu próprio sentimento interior enquanto criador.  Essa obra resistiu aos séculos e pode ser encontrada na Piazza della Signorina, em Florença, na Itália (WOLF, 2005).</p>
+					</div>
+					</div>          
+					</div>
+	
+					<div class="col-md-6"> <!-- Imagem -->
+									<section class="KBmap" id="KBtestmap">
+									</section>
+					</div>
+		   
+			</div>
+</div>
+
+	</body>
+
+	<script>
+
+		var json = {
+			"mapMarker1": {
+				"cordX": "62.0",
+				"cordY": "21.13",
+				"icon": "plus.svg",
+				"modal": {
+					"title": "Cabeça",
+					"content": "<p> A semelhança nos traços faciais de Perseus e Medusa remetem ao fato de que fitar a medusa é temeroso, porém necessário, no sentido de enfrentar os próprios temores. </p>"
+				}
+			},
+
+			"mapMarker2": {
+				"cordX": "38.0",
+				"cordY": "14.93",
+				"icon": "plus.svg",
+				"modal": {
+					"title": "Rosto:",
+					"content": "<p> Se observarmos, Perseus está olhando para baixo, como que para interagir com os seus espectadores, do alto de seu pedestal, também esculpido por ele.</p>"
+				}
+			},
+			
+			"mapMarker3": {
+				"cordX": "42.11",
+				"cordY": "30.21",
+				"icon": "plus.svg",
+				"modal": {
+					"title": "Torso",
+					"content": "<p> O torso de Perseus é ornado com uma faixa com o nome “Bevenuto Cellini”, como se ele próprio se apresentasse como sendo esse Perseus vitorioso.</p>"
+				}
+			},
+
+			"mapMarker4": {
+				"cordX": "44.44",
+				"cordY": "55.91",
+				"icon": "plus.svg",
+				"modal": {
+					"title": "Pé",
+					"content": "<p> Sob os seus pés, derrotada, surge o corpo desfalecido da medusa, que ele pisa, como que querendo expressar a sua vitória sobre a serpente da sífilis, o mal do século.</p>"
+				}
+			},
+
+			"mapMarker5": {
+				"cordX": "34.11",
+				"cordY": "95.93",
+				"icon": "plus.svg",
+				"modal": {
+					"title": "Pedestal",
+					"content": "<p>No pedestal, Cellini esculpiu quatro deuses gregos: Zeus, Afrodite, Hermes, Palas e Athena. Mais uma simbologia é exibida na obra, pois o deus Hermes e a deusa Afrodite, são também conhecidos como Vênus e Mercúrio. Eles se encontram em justaposição no pedestal, como para simbolizar a causa e a cura da sífilis. Vênus é a deusa do amor e da beleza, e que deriva do latim venereus (relativo à Vênus), de onde deriva o termo doença venérea, que se atribui a qualquer infecção adquirida por relação sexual. Mercúrio, é o mensageiro dos deuses, e mercúrio era também, o medicamento utilizado para o tratamento da sífilis e que trouxe a cura para Cellini (WOLF, 2005).</p>"
+				}
+			},
+
+
+		};
+
+		(function($) {
+			$(document).ready(function(){
+
+				createKBmap('KBtestmap', 'images/obra1.jpeg');
+
+				KBtestmap.importJSON(json);
+
+				KBtestmap.showAllMapMarkers();
+
+			});
+
+		})(jQuery);
+
+	</script>
+
+	<div class="container">
+		<hr><img src="images/parceiros.png" alt="" class="img-responsive center-block" id="parceiros">
+	</div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

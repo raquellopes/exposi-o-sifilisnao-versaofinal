@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exposição</title>
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" type="text/css">
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="styles/KBmapmarkers.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/main.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/KBmapmarkers.js"></script>
+	<script type="text/javascript" src="js/KBmapmarkersCords.js"></script>
+</head>
+
+<body>
+		<nav class="navbar navbar-default navbar-fixed-top" id="home">
+                <div class="container">
+                        <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                </button>
+                                  <a class="navbar-left" href="index.html">
+                                    <img class="img-responsive" width="86" height="39" src="./images/logo-menu.png">
+                                </a>
+						</div>
+						
+                       <div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-right">
+									<li><a data-scroll href="index.html">Acervo</a></li>
+									<li><a href="sobre.html">Sobre</a><li> 
+									</ul>   
+						</div>
+                        <!--/.nav-collapse -->
+                </div>
+        </nav>
+
+        <header class="masthead text-white text-center">
+                <div class="overlay"></div>
+                <div class="container">
+                        <div class="row">
+                                <div class="col-xl-9">
+                                <h1>A sífilis, Joseph Sargent e Miss Evers’ Boys </h1>
+                                </div>
+                        </div>
+                </div>
+		</header>
+		
+
+        <!-- CONTAINER- AUTOR -->
+        <div class="container">
+			<div class="row">
+				<div class="col-md-5">
+				<img class= "autores" src="images/autor5.jpg" class="img-fluid" alt="Responsive image">
+				</div>
+		
+				<div class="col-md-7">
+					<h1 class="text-center">O autor</h1>
+					<p> Guiseppe  Danielle  Sargent,  mais  conhecido  como  Joseph  Sargent, nasceu em 22 de julho de 1925 em Jersey City, Nova Jersey, EUA. Foi  um  diretor americano, que atuou em televisão e cinema e dirigiu, entre outras obras os filmes  Tubarão 4: A Vingança (1987), Pesadelos Diabólicos (1983) e Jornada nas Estrelas (1966).</p>
+				</div>
+				</div>
+		</div>
+		
+	<!-- Obra 2 -->
+
+		<div class="container">
+				<div class="row">
+						<div class="col-md-7">
+						<div class="h-100">
+						<div class="row h-100 justify-content-center align-items-center">
+								<h2 class="text-center">A Obra</h2>
+						<p> "Em 1996, Joseph Sargent dirigiu a obra ficcional “Miss Evers’ Boys”. Essa obra se baseia na história real sobre um projeto de pesquisa realizado nos Estados Unidos, em Alabama, na cidade rural de Tuskegee, subsidiado pelo departamento de saúde pública do governo americano, entre os anos de 1932 e 1972”, e denominado “Tuskegee Study of Untreated Syphilis in the Negro Male”. Muito do significado do filme se baseia na ausência de princípios éticos no projeto de pesquisa, que, deliberadamente, apenas dispensou placebo para os pacientes portadores de sífilis, e não solicitou que através de um consentimento voluntário, os sujeitos de pesquisa se dispusessem a participar do experimento, violando o Código de Nuremberg, de 1947, que determina que a participação de um ser humano em pesquisas médicas só poderá ocorrer mediante consentimento voluntário dos sujeitos da pesquisa (REVERBY; FOSTER, 2010).</p>
+						</div>
+						</div>          
+						</div>
+		
+						<div class="col-md-5"> <!-- Imagem -->
+										<section class="KBmap" id="KBtestmap">
+										</section>
+						</div>
+				</div>
+		</div>
+
+
+	<script>
+
+		var json = {
+			"mapMarker1": {
+				"cordX": "82.0",
+				"cordY": "64.93",
+				"icon": "plus.svg",
+				"modal": {
+					"title": "Filme",
+					"content": "<p> O filme não tem a intenção de ser um documentário e utiliza de licença poética, na sua narrativa. É destacado o papel da enfermeira Eunice Evers, que na história real se chamava Eunice Verdell Rivers Laurie, que foi selecionada para trabalhar na pesquisa por sua influência sobre a comunidade negra, e por ser de origem afro-americana. Seu conflito era a obediência às ordens médicas ou não causar danos aos seus pacientes. O dilema de Miss Evers se acentuava “a medida em que os sinais e sintomas dos pacientes se agravavam, trazendo incapacitação e até morte.”</p>"
+				}
+			},
+
+			"mapMarker2": {
+				"cordX": "7.96",
+				"cordY": "89.93",
+				"icon": "plus.svg",
+				"modal": {
+					"title": "Filme",
+					"content": "<p>Durante quarenta décadas, essa equipe negou informações e tratamento, e permitiu, que os pacientes sofressem sequelas como, alterações ósseas, cardíacas e neurológicas, cegueira e também óbitos. “O filme dirigido por Joseph Sargent oferece a possibilidade de discussão acerca de temas difíceis e dolorosos para a sociedade da época, como a discriminação racial, poder dominante da equipe de saúde sobre o paciente, papel da mulher enquanto profissional e ser social, ausência de uma política pública que reduza as desigualdades,” dentre outros aspectos morais e éticos.</p>"
+				}
+			},
+		};
+
+		(function($) {
+			$(document).ready(function(){
+
+				createKBmap('KBtestmap', 'images/obra5.png');
+
+				KBtestmap.importJSON(json);
+
+				KBtestmap.showAllMapMarkers();
+
+			});
+
+		})(jQuery);
+
+	</script>
+
+	<div class="container">
+		<hr><img src="images/parceiros.png" alt="" class="img-responsive center-block" id="parceiros">
+	</div>
+
+
+	</body>
+</html>
